@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoàng Nguyên</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bd">
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="wrapper">
+        <span id="s1"></span>
+        <span id="s2"></span>
+        <span id="s3"></span>
+        <span id="s4"></span>
+        <button id="dark" class="fas fa-sun"></button>
+        <button id="light" class="fas fa-moon"></button>
+        <div class="img-area">
+
+
+            <div class="inner-area">
+                <img src="assets/hoangnguyen.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="name">Nguyễn Tấn Hoàng Nguyên</div>
+        <div class="about">
+
+            <p style="color: rgb(185, 190, 194); font-weight: 600;">Đang sinh sống và học tập tại:</p>
+            <a href="https://www.google.com/maps/search/L%C3%AA+v%C4%83n+vi%E1%BB%87t,+Qu%E1%BA%ADn+9,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8525762,106.789153,15z/data=!3m1!4b1?entry=ttu"
+                class="address" style="color: rgba(220, 220, 220, 0.567); ">Quận 9, thành phố Hồ Chí Minh</a>
+
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/hoangxin3006/" class="tiktok"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100042511698313" class="facebook"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@userzkaxgu6zys" class="insta"><i class="fab fa-tiktok"></i></a>
+            <a href="https://github.com/Nguyen3006-IT" class="yt"><i id="git" class="fab fa-github"></i></a>
+        </div>
+        <div class="buttons">
+            <button class="tt" id="popup-btn">Thông Tin </button>
+            <div class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <div id="info">
+                        <p id="tag" class="fas fa-tag"></p>
+                        Thông tin
+                        <br>
+                        <p class="fas fa-male"></p> : Nguyễn Tấn Hoàng Nguyên
+                        <br>
+                        <p class="fas fa-birthday-cake"></p> : 30/06/2007
+
+                        <br>
+                        <p class="fas fa-location-dot"></p> : Ninh Phước, Ninh Thuận
+                        <br>
+                        <p class="fas fa-phone"></p> : 0947555725
+                        <br>
+                        <p class="fas fa-g"></p> : hoangnguyen30607@gmail.com
+                        <br>
+
+                        <hr>
+                        <p id="pj" class="fas fa-project-diagram"></p> Project
+                        <br>
+
+
+                        <i class="fab fa-facebook"></i>
+                        <a href="https://www.facebook.com/smartstudyssbot"><span>SmartStudy - ChatBot</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #link {
+                width: 17px;
+            }
+        </style>
+        <script>
+            let modalBtn = document.getElementById("popup-btn");
+            let modal = document.querySelector(".popup");
+            let closeBtn = document.querySelector(".close-btn");
+            // Hiển thị popup khi nhấp chuột vào button
+            modalBtn.onclick = function () {
+                modal.style.display = "block"
+
+            }
+            // Đóng popup khi ấn vào nút đóng
+            closeBtn.onclick = function () {
+                modal.style.display = "none"
+
+            }
+
+
+            let light = document.getElementById("light");
+            let content = document.querySelector("#bd");
+            let dark = document.querySelector("#dark");
+            let name = document.querySelector(".name");
+            let about = document.querySelector(".about")
+            let tik = document.querySelector("#tik")
+            let git = document.querySelector("#git")
+            let tt = document.querySelector(".tt")
+            // Hiển thị popup khi nhấp chuột vào button
+            light.onclick = function () {
+                content.style.backgroundColor = "#080710"
+                light.style.display = "none"
+                dark.style.display = "block"
+                name.style.color = "white"
+                about.style.color = "white"
+                tt.style.color = "white"
+                tik.style.color = "white"
+                git.style.color = "white"
+            }
+
+
+            dark.onclick = function () {
+                content.style.backgroundColor = "white"
+                dark.style.display = "none"
+                light.style.display = "block"
+                name.style.color = "#080710"
+                about.style.color = " #080710"
+                tt.style.color = "#080710"
+                tik.style.color = " #080710"
+                git.style.color = " #080710"
+            }
+
+        </script>
+</body>
+
+</html>
