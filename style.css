@@ -5,11 +5,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
@@ -17,8 +17,8 @@ body {
 }
 
 .background {
-	width: 430px;
-	height: 520px;
+	width: 50%;
+	height: 70vh;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	left: 50%;
@@ -33,7 +33,6 @@ body {
 }
 
 .shape:first-child {
-
 	left: -80px;
 	top: -80px;
 	animation: change 15s ease infinite;
@@ -96,7 +95,7 @@ body {
 
 .wrapper {
 	position: relative;
-	width: 380px;
+	width: 350px;
 	padding: 30px;
 	border-radius: 2px;
 	display: flex;
@@ -404,5 +403,53 @@ button {
 	50%,
 	100% {
 		bottom: 100%;
+	}
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.background {
+		width: 400px;
+		height: 280px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+	}
+
+	.wrapper {
+		position: relative;
+		width: 380px;
+		padding: 30px;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.background {
+		width: 420px;
+		height: 300px;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+	}
+
+	.wrapper {
+		position: relative;
+		width: 380px;
+		padding: 30px;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		overflow: hidden;
 	}
 }
